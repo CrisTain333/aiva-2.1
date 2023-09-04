@@ -82,7 +82,7 @@ export const Sidebar = ({
           href="/dashboard"
           className="flex items-center pl-3 mb-14"
         >
-          <div className="relative h-8 w-8 mr-4">
+          <div className="relative h-9 w-9 mr-3">
             <Image
               fill
               alt="Logo"
@@ -95,7 +95,7 @@ export const Sidebar = ({
               poppins.className
             )}
           >
-            Bramma
+            AIVA
           </h1>
         </Link>
         <div className="space-y-1">
