@@ -95,7 +95,7 @@ export const Sidebar = ({
               poppins.className
             )}
           >
-            Genius
+            Bramma
           </h1>
         </Link>
         <div className="space-y-1">
