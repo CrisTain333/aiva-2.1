@@ -1,3 +1,4 @@
+import { LandingHero } from "@/components/LandingHero/LadningHero";
 import { LandingNavbar } from "@/components/LandingNav/LandingNav";
 
 import { Montserrat } from "next/font/google";
@@ -12,6 +13,7 @@ const LadingPage = () => {
     <div>
       {/* Nav Section */}
       <LandingNavbar />
+      <LandingHero />
     </div>
   );
 };
