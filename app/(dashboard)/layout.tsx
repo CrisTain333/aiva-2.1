@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import { Sidebar } from "@/components/Sidebar/Sidebar";
 import React from "react";
+import { Toaster } from "react-hot-toast";
 
 const Layout = ({
   children,
@@ -17,6 +18,7 @@ const Layout = ({
       </div>
       <main className="md:pl-72 pb-10">
         <Navbar />
+        <Toaster />
         {children}
       </main>
     </div>

@@ -50,10 +50,8 @@ export async function POST(req: Request) {
     // if (!isPro) {
     //   await incrementApiLimit();
     // }
-
-    return NextResponse.json(
-      response.data.choices[0].message
-    );
+    console.log(response);
+    return NextResponse.json(response?.choices[0]?.message);
   } catch (error) {
     console.log("[CONVERSATION_ERROR]", error);
     return new NextResponse("Internal Error", {

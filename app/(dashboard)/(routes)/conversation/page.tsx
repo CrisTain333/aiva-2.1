@@ -18,14 +18,14 @@ import {
   FormItem,
 } from "@/components/ui/form";
 import { cn } from "@/lib/utils";
-import { UserAvatar } from "@/components/user-avatar";
-import { Empty } from "@/components/ui/empty";
+// import { Empty } from "@/components/ui/empty";
 
 import { useProModal } from "@/lib/hooks/useProModal";
 import { formSchema } from "@/lib/constant/formSchema";
 import Loader from "@/components/Loader/Loader";
 import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
+import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 
 const ConversationPage = () => {
   const router = useRouter();
@@ -55,6 +55,7 @@ const ConversationPage = () => {
         "/api/conversation",
         { messages: newMessages }
       );
+      console.log(response);
       setMessages((current) => [
         ...current,
         userMessage,
@@ -68,8 +69,6 @@ const ConversationPage = () => {
       } else {
         toast.error("Something went wrong.");
       }
-    } finally {
-      router.refresh();
     }
   };
 
@@ -133,7 +132,7 @@ const ConversationPage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started." />
+            <p>No conversation started.</p>
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (
