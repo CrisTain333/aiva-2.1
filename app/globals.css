@@ -82,3 +82,19 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #ffffff;
+  /* border: 1px solid #cacaca; */
+  box-shadow: inset 0 0 6px 262626;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #3fc5ff;
+}
