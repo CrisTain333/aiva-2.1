@@ -37,22 +37,10 @@ const routes = [
     color: "text-violet-500",
   },
   {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-pink-700",
-    href: "/image",
-  },
-  {
     label: "Bug Fixer",
     icon: BugOff,
     color: "text-orange-700",
     href: "/bug-fixer",
-  },
-  {
-    label: "Music ",
-    icon: Music,
-    color: "text-emerald-500",
-    href: "/music",
   },
   {
     label: "Code Generation",
@@ -60,6 +48,20 @@ const routes = [
     color: "text-green-700",
     href: "/code",
   },
+  {
+    label: "Image Generation",
+    icon: ImageIcon,
+    color: "text-pink-700",
+    href: "/image",
+  },
+
+  {
+    label: "Music ",
+    icon: Music,
+    color: "text-emerald-500",
+    href: "/music",
+  },
+
   {
     label: "Settings",
     icon: Settings,
