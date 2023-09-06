@@ -34,7 +34,7 @@ export const tools = [
     icon: BugOff,
     color: "text-orange-700",
     bgColor: "bg-orange-700/10",
-    href: "/bug-fix",
+    href: "/bug-fixer",
   },
   {
     label: "Code Generation",

@@ -46,7 +46,7 @@ const routes = [
     label: "Bug Fixer",
     icon: BugOff,
     color: "text-orange-700",
-    href: "/bug-fix",
+    href: "/bug-fixer",
   },
   {
     label: "Music ",
