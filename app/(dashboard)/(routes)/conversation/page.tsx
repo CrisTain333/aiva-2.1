@@ -18,7 +18,6 @@ import {
   FormItem,
 } from "@/components/ui/form";
 import { cn } from "@/lib/utils";
-// import { Empty } from "@/components/ui/empty";
 
 import { useProModal } from "@/lib/hooks/useProModal";
 import { formSchema } from "@/lib/constant/formSchema";
@@ -28,7 +27,6 @@ import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 
 const ConversationPage = () => {
-  const router = useRouter();
   const proModal = useProModal();
   const [messages, setMessages] = useState<any[]>([]);
 
