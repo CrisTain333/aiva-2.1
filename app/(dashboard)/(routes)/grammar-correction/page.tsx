@@ -52,7 +52,7 @@ const ConversationPage = () => {
       const newMessages = [...messages, userMessage];
 
       const response = await axios.post(
-        "/api/conversation",
+        "/api/grammar-correction",
         { messages: newMessages }
       );
       setMessages((current) => [
