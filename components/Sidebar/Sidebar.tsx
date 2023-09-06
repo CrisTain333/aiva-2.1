@@ -11,6 +11,7 @@ import {
   Music,
   Settings,
   VideoIcon,
+  GraduationCap,
   BugOff,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -56,10 +57,10 @@ const routes = [
   },
 
   {
-    label: "Music ",
-    icon: Music,
+    label: "Grammar correction",
+    icon: GraduationCap,
     color: "text-emerald-500",
-    href: "/music",
+    href: "/grammar-correction",
   },
 
   {
