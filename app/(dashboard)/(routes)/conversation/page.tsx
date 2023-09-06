@@ -25,6 +25,7 @@ import Loader from "@/components/Loader/Loader";
 import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ConversationPage = () => {
   const proModal = useProModal();
@@ -138,7 +139,7 @@ const ConversationPage = () => {
               <div
                 key={message.content}
                 className={cn(
-                  "p-8 w-full text-base flex items-start gap-x-8 rounded-lg",
+                  "p-8 w-full flex items-start gap-x-8 rounded-lg",
                   message.role === "user"
                     ? "bg-white border border-black/10"
                     : "bg-muted"
@@ -149,7 +150,24 @@ const ConversationPage = () => {
                 ) : (
                   <BotAvatar />
                 )}
-                <p className="text-sm">{message.content}</p>
+                <ReactMarkdown
+                  components={{
+                    pre: ({ node, ...props }) => (
+                      <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                        <pre {...props} />
+                      </div>
+                    ),
+                    code: ({ node, ...props }) => (
+                      <code
+                        className="bg-black/10 rounded-lg p-1"
+                        {...props}
+                      />
+                    ),
+                  }}
+                  className="text-sm overflow-hidden leading-7"
+                >
+                  {message.content || ""}
+                </ReactMarkdown>
               </div>
             ))}
           </div>
