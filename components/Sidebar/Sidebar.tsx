@@ -13,6 +13,7 @@ import {
   VideoIcon,
   GraduationCap,
   BugOff,
+  Languages,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -64,9 +65,10 @@ const routes = [
   },
 
   {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
+    label: "Translation",
+    icon: Languages,
+    href: "/translation",
+    color: "text-yellow-500",
   },
 ];
 

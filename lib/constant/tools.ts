@@ -6,6 +6,7 @@ import {
   VideoIcon,
   BugOff,
   GraduationCap,
+  Languages,
 } from "lucide-react";
 
 export const tools = [
@@ -43,5 +44,12 @@ export const tools = [
     color: "text-pink-700",
     bgColor: "bg-pink-700/10",
     href: "/image",
+  },
+  {
+    label: "Translation",
+    icon: Languages,
+    href: "/translation",
+    bgColor: "bg-yellow-500/10",
+    color: "text-yellow-500",
   },
 ];
