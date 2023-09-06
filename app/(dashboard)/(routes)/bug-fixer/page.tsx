@@ -52,7 +52,7 @@ const ConversationPage = () => {
       };
       const newMessages = [...messages, userMessage];
 
-      const response = await axios.post("/api/code", {
+      const response = await axios.post("/api/bug-fix", {
         messages: newMessages,
       });
       setMessages((current) => [
@@ -106,7 +106,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Create a Service For Authentication Using Javascript"
+                        placeholder="provide your code to fix he bugs"
                         {...field}
                       />
                     </FormControl>
