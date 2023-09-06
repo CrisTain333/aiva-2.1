@@ -5,6 +5,7 @@ import {
   Music,
   VideoIcon,
   BugOff,
+  GraduationCap,
 } from "lucide-react";
 
 export const tools = [
@@ -30,9 +31,9 @@ export const tools = [
     href: "/code",
   },
   {
-    label: "Music Generation",
-    icon: Music,
-    href: "/music",
+    label: "Grammar correction",
+    icon: GraduationCap,
+    href: "/grammar-correction",
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
   },
