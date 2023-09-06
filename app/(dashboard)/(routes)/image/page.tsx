@@ -63,6 +63,8 @@ const PhotoPage = () => {
         values
       );
 
+      console.log(response);
+
       const urls = response.data.map(
         (image: { url: string }) => image.url
       );
@@ -74,10 +76,9 @@ const PhotoPage = () => {
       } else {
         toast.error("Something went wrong.");
       }
-    } finally {
-      router.refresh();
     }
   };
+  console.log(photos);
 
   return (
     <div>
