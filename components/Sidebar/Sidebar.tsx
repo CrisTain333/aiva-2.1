@@ -11,6 +11,7 @@ import {
   Music,
   Settings,
   VideoIcon,
+  BugOff,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -42,13 +43,13 @@ const routes = [
     href: "/image",
   },
   {
-    label: "Video Generation",
-    icon: VideoIcon,
+    label: "Bug Fixer",
+    icon: BugOff,
     color: "text-orange-700",
-    href: "/video",
+    href: "/bug-fix",
   },
   {
-    label: "Music Generation",
+    label: "Music ",
     icon: Music,
     color: "text-emerald-500",
     href: "/music",

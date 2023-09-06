@@ -4,6 +4,7 @@ import {
   MessageSquare,
   Music,
   VideoIcon,
+  BugOff,
 } from "lucide-react";
 
 export const tools = [
@@ -29,11 +30,11 @@ export const tools = [
     href: "/image",
   },
   {
-    label: "Video Generation",
-    icon: VideoIcon,
+    label: "Bug Fixer",
+    icon: BugOff,
     color: "text-orange-700",
     bgColor: "bg-orange-700/10",
-    href: "/video",
+    href: "/bug-fix",
   },
   {
     label: "Code Generation",
