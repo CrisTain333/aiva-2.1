@@ -8,6 +8,7 @@ import {
   GraduationCap,
   Languages,
   KanbanSquare,
+  Mail,
 } from "lucide-react";
 
 export const tools = [
@@ -59,5 +60,12 @@ export const tools = [
     href: "/lesson-plan-writer",
     bgColor: "bg-sky-500/10",
     color: "text-sky-500",
+  },
+  {
+    label: "Email writer",
+    icon: Mail,
+    href: "/email-writer",
+    bgColor: "bg-rose-500/10",
+    color: "text-rose-500",
   },
 ];

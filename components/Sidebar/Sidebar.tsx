@@ -15,6 +15,7 @@ import {
   BugOff,
   Languages,
   Kanban,
+  Mail,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -76,6 +77,12 @@ const routes = [
     icon: Kanban,
     href: "/lesson-plan-writer",
     color: "text-sky-500",
+  },
+  {
+    label: "Email writer",
+    icon: Mail,
+    href: "/email-writer",
+    color: "text-rose-500",
   },
 ];
 
