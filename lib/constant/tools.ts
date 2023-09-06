@@ -7,6 +7,7 @@ import {
   BugOff,
   GraduationCap,
   Languages,
+  KanbanSquare,
 } from "lucide-react";
 
 export const tools = [
@@ -51,5 +52,12 @@ export const tools = [
     href: "/translation",
     bgColor: "bg-yellow-500/10",
     color: "text-yellow-500",
+  },
+  {
+    label: "Lesson plan writer",
+    icon: KanbanSquare,
+    href: "/lesson-plan-writer",
+    bgColor: "bg-sky-500/10",
+    color: "text-sky-500",
   },
 ];
