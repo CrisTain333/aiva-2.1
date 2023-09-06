@@ -14,6 +14,7 @@ import {
   GraduationCap,
   BugOff,
   Languages,
+  Kanban,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -69,6 +70,12 @@ const routes = [
     icon: Languages,
     href: "/translation",
     color: "text-yellow-500",
+  },
+  {
+    label: "Lesson Plan Writer",
+    icon: Kanban,
+    href: "/lesson-plan-writer",
+    color: "text-sky-500",
   },
 ];
 
