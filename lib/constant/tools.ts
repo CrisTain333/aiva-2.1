@@ -9,6 +9,7 @@ import {
   Languages,
   KanbanSquare,
   Mail,
+  Hash,
 } from "lucide-react";
 
 export const tools = [
@@ -67,5 +68,12 @@ export const tools = [
     href: "/email-writer",
     bgColor: "bg-rose-500/10",
     color: "text-rose-500",
+  },
+  {
+    label: "Blog writer",
+    icon: Hash,
+    href: "/blog-writer",
+    bgColor: "bg-[#2ec4b6]/10",
+    color: "text-[#2ec4b6]",
   },
 ];

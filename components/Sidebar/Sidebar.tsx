@@ -16,6 +16,7 @@ import {
   Languages,
   Kanban,
   Mail,
+  Hash,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 
@@ -83,6 +84,12 @@ const routes = [
     icon: Mail,
     href: "/email-writer",
     color: "text-rose-500",
+  },
+  {
+    label: "Blog writer",
+    icon: Hash,
+    href: "/blog-writer",
+    color: "text-[#2ec4b6]",
   },
 ];
 
