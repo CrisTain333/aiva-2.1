@@ -35,7 +35,7 @@ export const LandingNavbar = () => {
             font.className
           )}
         >
-          AiVa
+          AIVA
         </h1>
       </Link>
       <div className="flex items-center gap-x-2">

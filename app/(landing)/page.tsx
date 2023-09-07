@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import { LandingHero } from "@/components/LandingHero/LadningHero";
 import { LandingNavbar } from "@/components/LandingNav/LandingNav";
 
@@ -14,6 +15,7 @@ const LadingPage = () => {
       {/* Nav Section */}
       <LandingNavbar />
       <LandingHero />
+      <Footer />
     </div>
   );
 };
