@@ -52,6 +52,8 @@ export async function POST(req: Request) {
         messages: [instructionMessage, ...messages],
       });
 
+    console.log(response);
+
     // if (!isPro) {
     //   await incrementApiLimit();
     // }
