@@ -118,7 +118,7 @@ export const Sidebar = ({
             AIVA
           </h1>
         </Link>
-        <div className="space-y-1">
+        <div className="space-y-1 -mt-5">
           {routes.map((route) => (
             <Link
               key={route.href}
