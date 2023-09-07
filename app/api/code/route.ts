@@ -9,7 +9,7 @@ const openai = new OpenAI({
 const instructionMessage: any = {
   role: "system",
   content:
-    "You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations. Try To Keep The Code lean And Explain Your Code in best way possible",
+    "Your name is AiVa.You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations. Try To Keep The Code lean And Explain Your Code in best way possible",
 };
 
 export async function POST(req: Request) {

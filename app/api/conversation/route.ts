@@ -6,6 +6,11 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+const instructionMessage: any = {
+  role: "system",
+  content: "Your name is AiVa.",
+};
+
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
@@ -44,7 +49,7 @@ export async function POST(req: Request) {
     const response: any =
       await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
-        messages,
+        messages: [instructionMessage, ...messages],
       });
 
     // if (!isPro) {

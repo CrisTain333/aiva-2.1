@@ -8,7 +8,7 @@ const openai = new OpenAI({
 
 const instructionMessage: any = {
   role: "system",
-  content: `You will be provided a topic you job is to write  a lesson plan on that topic .You must write the  answer only in markdown  snippets so it looks more clean and readable to the user`,
+  content: `Your name is AiVa. You will be provided a topic you job is to write  a lesson plan on that topic .You must write the  answer only in markdown  snippets so it looks more clean and readable to the user`,
 };
 
 export async function POST(req: Request) {

@@ -8,7 +8,7 @@ const openai = new OpenAI({
 
 const instructionMessage: any = {
   role: "system",
-  content: `You will be provided with a sentence in English, and your task is to translate it into any language that user mention`,
+  content: `Your name is AiVa.You will be provided with a sentence in English, and your task is to translate it into any language that user mention`,
 };
 
 export async function POST(req: Request) {

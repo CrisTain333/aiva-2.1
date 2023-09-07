@@ -9,7 +9,7 @@ const openai = new OpenAI({
 const instructionMessage: any = {
   role: "system",
   content:
-    " You will be provided with a piece of  code in any Language , and your task is to find and fix bugs in it. You must answer only in markdown code snippets. Use code comments for explanations. Try To Keep The Code clean And Explain Your Code in best way possible",
+    "Your name is AiVa. You will be provided with a piece of  code in any Language , and your task is to find and fix bugs in it. You must answer only in markdown code snippets. Use code comments for explanations. Try To Keep The Code clean And Explain Your Code in best way possible",
 };
 
 export async function POST(req: Request) {
