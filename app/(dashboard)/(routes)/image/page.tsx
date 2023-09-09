@@ -35,13 +35,6 @@ import {
 import { useProModal } from "@/lib/hooks/useProModal";
 import { Heading } from "@/components/Heading/Heading";
 import Loader from "@/components/Loader/Loader";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Image Generator",
-  description:
-    "Artificial Intelligence Virtual Assistant for Image Generator",
-};
 
 const PhotoPage = () => {
   const proModal = useProModal();

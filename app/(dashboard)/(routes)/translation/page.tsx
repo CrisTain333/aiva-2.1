@@ -26,13 +26,6 @@ import Loader from "@/components/Loader/Loader";
 import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Translation",
-  description:
-    "Artificial Intelligence Virtual Assistant for Translation",
-};
 
 const Translation = () => {
   const router = useRouter();
