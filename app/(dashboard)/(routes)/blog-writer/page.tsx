@@ -3,6 +3,7 @@
 import * as z from "zod";
 import axios from "axios";
 import { BugOff, Code, Hash } from "lucide-react";
+import type { Metadata } from "next";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
@@ -27,6 +28,11 @@ import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 import ReactMarkdown from "react-markdown";
+export const metadata: Metadata = {
+  title: "Blog Writer",
+  description:
+    "Artificial Intelligence Virtual Assistant for Blog Writing",
+};
 
 const BlogPage = () => {
   const router = useRouter();

@@ -27,6 +27,13 @@ import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Code Generator",
+  description:
+    "Artificial Intelligence Virtual Assistant for Code Generator",
+};
 
 const ConversationPage = () => {
   const router = useRouter();

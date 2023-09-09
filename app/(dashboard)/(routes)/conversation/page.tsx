@@ -26,6 +26,12 @@ import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conversation",
+  description: "Artificial Intelligence Virtual Assistant",
+};
 
 const ConversationPage = () => {
   const proModal = useProModal();

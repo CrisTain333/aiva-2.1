@@ -26,6 +26,13 @@ import Loader from "@/components/Loader/Loader";
 import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Grammar Correction",
+  description:
+    "Artificial Intelligence Virtual Assistant for Grammar Correction",
+};
 
 const ConversationPage = () => {
   const router = useRouter();

@@ -27,6 +27,13 @@ import { Heading } from "@/components/Heading/Heading";
 import { BotAvatar } from "@/components/BotAvatar/BotAvatar";
 import { UserAvatar } from "@/components/UserAvatar/UserAvatar";
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bug Fixer",
+  description:
+    "Artificial Intelligence Virtual Assistant for Bug Fixer",
+};
 
 const ConversationPage = () => {
   const router = useRouter();
