@@ -13,7 +13,6 @@ const font = Montserrat({
 const LadingPage = () => {
   return (
     <div>
-      {/* Nav Section */}
       <LandingNavbar />
       <LandingHero />
       <Steps />
