@@ -11,12 +11,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { cn } from "@/lib/utils";
 
 import { useProModal } from "@/lib/hooks/useProModal";
@@ -40,9 +35,7 @@ const ConversationPage = () => {
 
   const isLoading = form.formState.isSubmitting;
 
-  const onSubmit = async (
-    values: z.infer<typeof formSchema>
-  ) => {
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       const userMessage: any = {
         role: "user",
@@ -50,15 +43,11 @@ const ConversationPage = () => {
       };
       const newMessages = [...messages, userMessage];
 
-      const response = await axios.post(
-        "/api/conversation",
-        { messages: newMessages }
-      );
-      setMessages((current) => [
-        ...current,
-        userMessage,
-        response.data,
-      ]);
+      const response = await axios.post("/api/conversation", { messages: newMessages });
+
+      console.log(response);
+
+      setMessages((current) => [...current, userMessage, response.data]);
 
       form.reset();
     } catch (error: any) {
@@ -130,9 +119,7 @@ const ConversationPage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <p className="font-semibold text-center my-5 text-lg">
-              No conversation started.
-            </p>
+            <p className="font-semibold text-center my-5 text-lg">No conversation started.</p>
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (
@@ -140,16 +127,10 @@ const ConversationPage = () => {
                 key={message.content}
                 className={cn(
                   "p-8 w-full flex items-start gap-x-8 rounded-lg",
-                  message.role === "user"
-                    ? "bg-white border border-black/10"
-                    : "bg-muted"
+                  message.role === "user" ? "bg-white border border-black/10" : "bg-muted"
                 )}
               >
-                {message.role === "user" ? (
-                  <UserAvatar />
-                ) : (
-                  <BotAvatar />
-                )}
+                {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
                 <ReactMarkdown
                   components={{
                     pre: ({ node, ...props }) => (

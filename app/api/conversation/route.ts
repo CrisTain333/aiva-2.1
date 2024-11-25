@@ -16,18 +16,16 @@ export async function POST(req: Request) {
     const { userId } = auth();
     const body = await req.json();
     const { messages } = body;
+    console.log(messages);
 
-    if (!userId) {
-      return new NextResponse("Unauthorized", {
-        status: 401,
-      });
-    }
+    // if (!userId) {
+    //   return new NextResponse("Unauthorized", {
+    //     status: 401,
+    //   });
+    // }
 
     if (!openai.apiKey) {
-      return new NextResponse(
-        "OpenAI API Key not configured.",
-        { status: 500 }
-      );
+      return new NextResponse("OpenAI API Key not configured.", { status: 500 });
     }
 
     if (!messages) {
@@ -46,11 +44,10 @@ export async function POST(req: Request) {
     //   );
     // }
 
-    const response: any =
-      await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
-        messages: [instructionMessage, ...messages],
-      });
+    const response: any = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [instructionMessage, ...messages],
+    });
 
     console.log(response);
 
