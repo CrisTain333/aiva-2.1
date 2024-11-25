@@ -16,7 +16,7 @@ export async function POST(req: Request) {
     // const { userId } = auth();
     const body = await req.json();
     const { messages } = body;
-    console.log(messages);
+    console.log(openai);
 
     // if (!userId) {
     //   return new NextResponse("Unauthorized", {
